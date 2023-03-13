@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/normalize.css">
+<link rel="stylesheet" href="/skeleton.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+    </style>
+  <title><%=Jewelry.name%></title>
+</head>
+  <body>
+    <div class="jewelry-head">
+      <div class ='header'>
+      <h1><%=Jewelry.name%></h1>
+    </div>
+      <img src="<%=Pokemon.img%>"></img>
+      <h4>Name: <%=Jewelry.name%></h4>
+      <a href="/"></a><button class = "buttons">Back to Jewelry</button></a>
+      <form id="delete" action="/<%=Jewelry._id%>?_method=DELETE" method="POST">
+        <input class = "buttons" type="submit" value="Delete"/>
+      </form>
+    </div>
+      <div id="edit-container">
+        <form  style='margin-top: 10px; ' id="edit-form" action="/<Jewelry._id%>?_method=PUT" method="POST">
+          <label>Name:</label><input style='height: 20px; margin-bottom: 5px;width: 200px' type="text" name="name" value="<%=Jewelry.name%>" /><br/>
+          <label>Image:</label><input style='height: 20px; margin-bottom: 5px;width: 200px' type="url" placeholder="Image URL" name="img" value="<%=Jewelry.img%>"/><br/>
+          <label>Price:</label><input style='height: 20px; margin-bottom: 5px;width: 200px' type="text" placeholder="Price" name="pice" value="<%=Jewelry.price%>"/><br/>
+          <label>Size:</label><input style='height: 20px; margin-bottom: 5px;width: 200px' type="number" placeholder="Size" name="size" value="<%=Jewelry.size%>"/><br/>
+          <label>Material:</label><input style='height: 20px; margin-bottom: 5px;width: 200px' type="text" placeholder="Material" name="material" value="<%=Jewelry.material%>"/><br/>
+          <label>Stone Type:</label><input style='height: 20px; margin-bottom: 5px;width: 200px' type="text" placeholder="Stone Type" name="type" value="<%=Jewelry.stone.type%>"/><br/>
+          <label>Stone Quantity:</label><input style='height: 20px; margin-bottom: 5px;width: 200px' style='height: 20px; margin-bottom: 5px;width: 200px' type="number" placeholder="Stone Quanity" name="quantity" value="<%=Jewelry.stones.quantity%>"/><br/>
+          <label>Stone Size:</label><input style='height: 20px; margin-bottom: 5px;width: 200px' type="text" placeholder="Stone Size" name="size" value="<%=Jewelry.stones.size%>"/><br/>
+          <label>Weight:</label><input style='height: 20px; margin-bottom: 5px;width: 200px' type="text" placeholder="Weight" name="weight" value="<%=Jewelry.stones.weight%>"/><br/>
+          <input class = "buttons"  type="submit" value="Save Changes"/>
+      </form>
+    </div>
+  </div>
+  </body>
+</html>

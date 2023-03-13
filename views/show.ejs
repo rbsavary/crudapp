@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/normalize.css">
+<link rel="stylesheet" href="/skeleton.css">
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+    </style>
+  <title><%=Jewelry.name%></title>
+</head>
+  <body>
+    <div>
+      <div class ='header'>
+      <h1><%=Jewelry.name%></h1>
+    </div>
+    <div style='display: flex; justify-content: center; align-items: center'>
+      <img  style= ' width: 300px;
+      height: 300px;
+      border: 2px solid black;
+      border-radius: 10px;' src="<%=Jewelry.img%>"></img>
+    
+    </div>
+    <h4>ID: <%=Jewelry.price%></h4>
+      <div style='display: flex;'>
+      <a href="/"><button class='buttons'>Back to Jewelry</button></a>
+   
+   
+    </div>
+    <div class="type">
+      <h3>Type: <%=Pokemon.type%></h3>
+      </div>
+    <div class="size">
+      <h3>Type: <%=Jewelry.size%></h3>
+      </div>
+      <div class="stones">
+        <h3>Stone(s): <%=Jewelry.stones.%></h3> 
+    <ul style='list-style-type: none'> 
+        <% for (let i = 0; i < Jewelry.stones.length; i++) { %>
+      <li>
+        <%=Jewelry.stones.type[i]%>
+      </li>
+      <li>
+        <%=Jewelry.stones.quantity[i]%>
+      </li>
+      <li>
+        <%=Jewelry.stones.size[i]%>
+      </li>
+    <% } %>
+    </ul>
+    </div>
+    <!-- <div style='display: flex; flex-direction: column; justify-content: center' >
+      <table style='width: 500px'><h3>Stats : </h3>
+        <tr>
+        <th style='border: 1px solid black;'>HP </th>
+        <td style='border: 1px solid black;'><%=Pokemon.stats.hp%></td>
+       </tr>
+       <tr>
+        <th  style='border: 1px solid black;'>Attack </th>
+        <td style='border: 1px solid black;'><%=Pokemon.stats.attack%></td>
+      </tr>
+      <tr>
+        <th  style='border: 1px solid black;'>Defense </th>
+        <td style='border: 1px solid black;'><%=Pokemon.stats.defense%></td>
+      </tr>
+      <tr>
+        <th  style='border: 1px solid black;'>SpAttack</th>
+         <td style='border: 1px solid black;'><%=Pokemon.stats.spattack%></td>
+        </tr>
+        <tr>
+        <th  style='border: 1px solid black;'>SpDefense</th>
+        <td style='border: 1px solid black;'><%=Pokemon.stats.spdefense%></td>
+      </tr>
+      <tr>
+        <th  style='border: 1px solid black;'>Speed</th> 
+        <td style='border: 1px solid black;'><%=Pokemon.stats.speed%></td>
+      </tr>
+   
+    </table> -->
+    <a href="/<%=Jewelry._id%>/edit"><button class='buttons'>Edit</button></a>
+    <form id="delete" action="/<%=Jewelry._id%>?_method=DELETE" method="POST">
+      <input class="buttons" type="submit" value="Delete"/>
+    </form>
+  </div>
+</div>
+  </body>
+</html>
