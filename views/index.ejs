@@ -22,7 +22,7 @@
       </form> -->
     </div>
     <div class ='btns'>
-    <a href="/new"> <button class='buttons'>Add Jewelry</button></a>
+    <a href="/new"> <button class='button'>Add Jewelry</button></a>
   </div>
     </header>
     <div class="container">
@@ -30,6 +30,7 @@
       <div class="jewelry-container">
         <a class="jewelry-img-link" href="/<%=jewelryCollection[i]._id%>">
           <img src=<%=jewelryCollection[i].img%>></img>
+          <h3><%=jewelryCollection[i].name%></h3>
         </a>
       </div>
     <% } %>

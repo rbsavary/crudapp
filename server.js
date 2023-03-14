@@ -56,37 +56,18 @@ app.get("/:id", (req, res) => {
   });
 });
 
-//==search
-
-app.get("/:id/edit", (req, res) => {
+app.get("/:id", (req, res) => {
   Jewelry.findById(req.params.id).then((currentJewelry) => {
     res.render("edit.ejs", { Jewelry: currentJewelry });
   });
 });
 
-app.put("/:id", (req, res) => {
-  let convertedBody = {
-    name: req.body.name,
-    img: req.body.img,
-    price: req.body.price,
-    type: req.body.type,
-    size: req.body.size,
-    material: req.body.material.split(", "),
-    stones: {
-      type: req.body.type,
-      quantity: req.body.quantity,
-      size: req.body.size,
-    },
-    weight: req.body.weight,
-  };
+app.put("/:id/edit", (req, res) => {
+  Jewelry.findByIdAndUpdate(req.params.id, req.body).then(() => {
+    res.redirect("/");
+  });
 });
-// Jewelry.findByIdAndUpdate(req.params.id, convertedBody, { new: true }).then();
-// app.post("/", (req, res) => {
-//   Jewelry.create(req.body).then();
-//   res.redirect("/");
-// });
-
 app.listen(port, () => {
   console.log(`Pretty Adornments app listening on port: ${port}`);
 });
-mongoose.connect("mongodb://127.0.0.1:27017/prettyadornments");
+mongoose.connect("mongodb://127.0.0.1:27017/jewelry");

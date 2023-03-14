@@ -12,39 +12,38 @@
   <title><%=Jewelry.name%></title>
 </head>
   <body>
- 
-    <div id="show-container">
-    <div class="jewelry-head">
-      <h1><%=Jewelry.name%></h1>
-      <img src="<%=Jewelry.img%>"></img>
-      <h4>ID: <%=Jewerly.type%></h4>
-      <button><a href="/">Back to Jewelry</a></button>
-     
-      
-    </div>
-    <div class="size">
-      <h4><%=Jewerly.size%></h4>
-    </div>
-    <h4 class="weight"><%=Jewerly.weight%></h4>
-    <div class="material"></div>
-    <ul> Material(s): 
-        <% for (let i = 0; i < Jewelry.material.length; i++) { %>
-      <li>
-        <%=Jewerly.material[i]%>
-      </li>
-    <% } %>
-    </ul>
-    </div>
-    <div class="stones">
-      <ul> Stone(s): 
-        <% for (let i = 0; i < Jewelry.stones.length; i++) { %>
-      <li> 
-        <li>HP: <%=Jewelry.stones.type[i]%></li>
-        <li>Attack: <%=Jewelry.stones.quantity[i]%></li>
-        <li>Defense: <%=Jewelry.stones.size[i]%></li>
-        <% } %>
+    <div class="container">
+      <div id="show-container">
+      <div class="jewelry-head">
+        <h1><%=Jewelry.name%></h1>
+        <img src="<%=Jewelry.img%>"></img>
+        <h4>ID: <%=Jewerly.type%></h4>
+        <button class="button"><a href="/">Back to Jewelry</a></button>  
+      </div>
+      <div class="size">
+        <h4><%=Jewerly.size%></h4>
+      </div>
+      <h4 class="weight"><%=Jewerly.weight%></h4>
+      <div class="material"></div>
+      <ul> Material(s): 
+          <% for (let i = 0; i < Jewelry.material.length; i++) { %>
+        <li>
+          <%=Jewerly.material[i]%>
+        </li>
+      <% } %>
       </ul>
+      </div>
+      <div class="stones">
+        <ul> Stone(s): 
+          <% for (let i = 0; i < Jewelry.stones.length; i++) { %>
+        <li> 
+          <li>HP: <%=Jewelry.stones.type[i]%></li>
+          <li>Attack: <%=Jewelry.stones.quantity[i]%></li>
+          <li>Defense: <%=Jewelry.stones.size[i]%></li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
   </body>
 </html>

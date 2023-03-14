@@ -5,14 +5,8 @@ module.exports = [
     price: "$1,399.99",
     type: "ring",
     size: "size 8",
-    material: ["14k gold"],
-    stones: [
-      {
-        type: "diamond",
-        quantity: "1",
-        size: "1/2ct",
-      },
-    ],
+    material: "14k gold",
+    stones: "diamond",
     weight: "2.05g",
   },
   {
@@ -21,14 +15,8 @@ module.exports = [
     price: "$1,399.99",
     type: "bracelet",
     size: "19.75cm",
-    material: ["18k gold"],
-    stones: [
-      {
-        type: "diamonds",
-        quantity: "40",
-        size: "1/20ct",
-      },
-    ],
+    material: "18k gold",
+    stones: "diamonds",
     weight: "60.95g",
   },
 
@@ -38,14 +26,8 @@ module.exports = [
     price: "$2,499.99",
     type: "bracelet",
     size: "19.75cm",
-    material: ["18k gold"],
-    stones: [
-      {
-        type: "",
-        quantity: "",
-        size: "",
-      },
-    ],
+    material: "18k gold",
+    stones: "na",
     weight: "18.6g",
   },
   {
@@ -54,14 +36,8 @@ module.exports = [
     price: "$3,999.99",
     type: "bracelet",
     size: "17.75cm",
-    material: ["14k gold"],
-    stones: [
-      {
-        type: "diamonds",
-        quantity: "30",
-        size: "1/20ct",
-      },
-    ],
+    material: "14k gold",
+    stones: "diamonds",
     weight: "13.35g",
   },
   {
@@ -70,14 +46,8 @@ module.exports = [
     price: "$6,999.99",
     type: "necklace",
     size: "22in",
-    material: ["14k gold"],
-    stones: [
-      {
-        type: "",
-        quantity: "",
-        size: "",
-      },
-    ],
+    material: "14k gold",
+    stones: "na",
     weight: "79g",
   },
   {
@@ -86,14 +56,8 @@ module.exports = [
     price: "$399.99",
     type: "bracelet",
     size: "7in",
-    material: ["925 silver"],
-    stones: [
-      {
-        type: "",
-        quantity: "",
-        size: "",
-      },
-    ],
+    material: "925 silver",
+    stones: "na",
     weight: "25.3g",
   },
   {
@@ -102,14 +66,8 @@ module.exports = [
     price: "$599.99",
     type: "necklace",
     size: "24in",
-    material: ["925 silver"],
-    stones: [
-      {
-        type: "",
-        quantity: "",
-        size: "",
-      },
-    ],
+    material: "925 silver",
+    stones: "na",
     weight: "59.5g",
   },
 ];

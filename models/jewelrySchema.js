@@ -3,17 +3,11 @@ const mongoose = require("mongoose");
 const jewelrySchema = new mongoose.Schema({
   name: String,
   img: String,
-  price: Number,
+  price: String,
   type: String,
   size: String,
-  material: [String],
-  stones: [
-    {
-      type: String,
-      quantity: Number,
-      size: String,
-    },
-  ],
+  material: String,
+  stones: String,
   weight: String,
 });
 
