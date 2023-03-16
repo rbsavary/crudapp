@@ -56,14 +56,14 @@ app.get("/:id", (req, res) => {
   });
 });
 
-app.get("/:id", (req, res) => {
+app.get("/:id/edit", (req, res) => {
   Jewelry.findById(req.params.id).then((currentJewelry) => {
     res.render("edit.ejs", { Jewelry: currentJewelry });
   });
 });
 
-app.put("/:id/edit", (req, res) => {
-  Jewelry.findByIdAndUpdate(req.params.id, req.body).then(() => {
+app.put("/:id", (req, res) => {
+  Jewelry.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(() => {
     res.redirect("/");
   });
 });

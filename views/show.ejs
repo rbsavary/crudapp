@@ -34,13 +34,19 @@
       <div class="size">
         <h3>Size: <%=Jewelry.size%></h3>
       </div>
+      <div class="material">
+        <h3>Material: <%=Jewelry.material%></h3> 
+      </div>
       <div class="stones">
         <h3>Stone(s): <%=Jewelry.stones%></h3> 
       </div>
+      <div class="weight">
+        <h3>Weight: <%=Jewelry.weight%></h3> 
+      </div>
       <div>
-        <a href="/<%=Jewelry._id%>/edit"><button class='buttons'>Edit</button></a>
+        <a href="/<%=Jewelry._id%>/edit"><button class='button'>Edit</button></a>
         <form id="delete" action="/<%=Jewelry._id%>?_method=DELETE" method="POST">
-          <input class="buttons" type="submit" value="Delete"/>
+          <input class="button" type="submit" value="Delete"/>
         </form>
       </div>
     </div>

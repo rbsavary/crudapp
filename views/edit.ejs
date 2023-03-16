@@ -22,7 +22,7 @@
           </form>
         </div>
         <div id="edit-container">
-          <form style='margin-top: 10px; ' id="edit-form" action="/<%Jewelry._id%>?_method=PUT" method="POST">
+          <form style='margin-top: 10px; ' id="edit-form" action="/<%=Jewelry._id%>?_method=PUT" method="POST">
             <label>Name:</label><input style='height: 20px; margin-bottom: 5px;width: 200px' type="text" name="name" value="<%=Jewelry.name%>" /><br/>
             <label>Image:</label><input style='height: 20px; margin-bottom: 5px;width: 200px' type="url" placeholder="Image URL" name="img" value="<%=Jewelry.img%>"/><br/>
             <label>Price:</label><input style='height: 20px; margin-bottom: 5px;width: 200px' type="text" placeholder="Price" name="pice" value="<%=Jewelry.price%>"/><br/>
@@ -30,7 +30,7 @@
             <label>Material:</label><input style='height: 20px; margin-bottom: 5px;width: 200px' type="text" placeholder="Material" name="material" value="<%=Jewelry.material%>"/><br/>
             <label>Stone(s):</label><input style='height: 20px; margin-bottom: 5px;width: 200px' type="text" placeholder="Stone" name="stones" value="<%=Jewelry.stones%>"/><br/>
             <label>Weight:</label><input style='height: 20px; margin-bottom: 5px;width: 200px' type="text" placeholder="Weight" name="weight" value="<%=Jewelry.weight%>"/><br/>
-            <input class = "buttons"  type="submit" value="Save Changes"/>
+            <input class = "button"  type="submit" value="Save Changes"/>
           </form>
         </div>
     </div>

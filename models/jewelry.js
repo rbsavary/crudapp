@@ -11,7 +11,7 @@ module.exports = [
   },
   {
     name: "Gold Charm Bracelet",
-    img: "",
+    img: "/PXL_20230314_225406607.jpg",
     price: "$1,399.99",
     type: "bracelet",
     size: "19.75cm",
@@ -22,17 +22,17 @@ module.exports = [
 
   {
     name: "Gold Bracelet",
-    img: "",
+    img: "/PXL_20230314_235242744.jpg",
     price: "$2,499.99",
     type: "bracelet",
     size: "19.75cm",
     material: "18k gold",
     stones: "na",
-    weight: "18.6g",
+    weight: "9.6g",
   },
   {
     name: "Gold Diamond Bracelet",
-    img: "",
+    img: "/PXL_20230315_000614759.jpg",
     price: "$3,999.99",
     type: "bracelet",
     size: "17.75cm",
@@ -42,13 +42,13 @@ module.exports = [
   },
   {
     name: "Gold Cuban Link Chain",
-    img: "",
+    img: "/PXL_20230315_001215869.jpg",
     price: "$6,999.99",
     type: "necklace",
     size: "22in",
     material: "14k gold",
     stones: "na",
-    weight: "79g",
+    weight: "69g",
   },
   {
     name: "Tiffany & Co. Silver Charm Bracelet",
