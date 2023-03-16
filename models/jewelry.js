@@ -1,6 +1,7 @@
 module.exports = [
   {
     name: "Engagement Ring",
+    img: "/PXL_20230314_225406607.jpg",
     price: "$1,399.99",
     type: "ring",
     size: "size 8",
@@ -10,6 +11,7 @@ module.exports = [
   },
   {
     name: "Gold Charm Bracelet",
+    img: "/PXL_20230314_235242744.jpg",
     price: "$1,399.99",
     type: "bracelet",
     size: "19.75cm",
@@ -20,6 +22,7 @@ module.exports = [
 
   {
     name: "Gold Bracelet",
+    img: "/PXL_20230315_000614759.jpg",
     price: "$2,499.99",
     type: "bracelet",
     size: "19.75cm",
@@ -29,6 +32,7 @@ module.exports = [
   },
   {
     name: "Gold Diamond Bracelet",
+    img: "/PXL_20230315_001215869.jpg",
     price: "$3,999.99",
     type: "bracelet",
     size: "17.75cm",
@@ -38,6 +42,7 @@ module.exports = [
   },
   {
     name: "Gold Cuban Link Chain",
+    img: "/PXL_20230314_225406607.jpg",
     price: "$6,999.99",
     type: "necklace",
     size: "22in",
@@ -47,6 +52,7 @@ module.exports = [
   },
   {
     name: "Tiffany & Co. Silver Charm Bracelet",
+    img: "/PXL_20230314_235242744.jpg",
     price: "$399.99",
     type: "bracelet",
     size: "7in",
@@ -56,6 +62,7 @@ module.exports = [
   },
   {
     name: "Aztec Pendant Necklace",
+    img: "/PXL_20230315_000614759.jpg",
     price: "$599.99",
     type: "necklace",
     size: "24in",

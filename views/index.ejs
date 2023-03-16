@@ -16,10 +16,6 @@
     <header>
       <div class ="header">
       <h1>Pretty Adornments Jewelry</h1>
-      <!-- <form action="">
-        <input type="search" value ="search"/>
-        <input type="submit" value="submit"/>
-      </form> -->
     </div>
     <div>
     <a href="/new"> <button class='button'>Add Jewelry</button></a>
@@ -29,6 +25,7 @@
         <% for (let i = 0; i < jewelryCollection.length; i++) { %>
       <div class="jewelry-container">
         <a class="jewelry-img-link" href="/<%=jewelryCollection[i]._id%>">
+            <img src=<%=jewelryCollection[i].img%>></img>
           <h3><%=jewelryCollection[i].name%></h3>
         </a>
       </div>

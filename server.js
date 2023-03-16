@@ -14,11 +14,11 @@ app.use(express.json());
 app.use(methodOverride("_method"));
 
 //===SEED
-// app.get("/jewelryseed", (req, res) => {
-//   Jewelry.create(JewelrySeed).then(() => {
-//     res.send(JewelrySeed);
-//   });
-// });
+app.get("/jewelryseed", (req, res) => {
+  Jewelry.create(JewelrySeed).then(() => {
+    res.send(JewelrySeed);
+  });
+});
 // Jewelry.collection.drop();
 // ===GET
 

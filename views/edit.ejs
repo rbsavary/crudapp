@@ -15,16 +15,19 @@
     <div class="container">
         <div class ='header'>
           <h1><%=Jewelry.name%></h1>
-          <img src="<%=Jewelry.img%>"></img>
-          <a href="/"></a><button class = "buttons">Back to Jewelry</button></a>
+          <a href="/"><button class = "button">Back to Jewelry</button></a>
+          <div>
+            <img src="<%=Jewelry.img%>"></img>
+          </div>
           <form id="delete" action="/<%=Jewelry._id%>?_method=DELETE" method="POST">
             <input class = "button" type="submit" value="Delete"/>
           </form>
         </div>
+        
         <div id="edit-container">
           <form style='margin-top: 10px; ' id="edit-form" action="/<%=Jewelry._id%>?_method=PUT" method="POST">
             <label>Name:</label><input style='height: 20px; margin-bottom: 5px;width: 200px' type="text" name="name" value="<%=Jewelry.name%>" /><br/>
-            <!-- <label>Image:</label><input style='height: 20px; margin-bottom: 5px;width: 200px' type="url" placeholder="Image URL" name="img" value="<%=Jewelry.img%>"/><br/> -->
+            <label>Image:</label><input style='height: 20px; margin-bottom: 5px;width: 200px' type="url" placeholder="Image URL" name="img" value="<%=Jewelry.img%>"/><br/>
             <label>Price:</label><input style='height: 20px; margin-bottom: 5px;width: 200px' type="text" placeholder="Price" name="pice" value="<%=Jewelry.price%>"/><br/>
             <label>Size:</label><input style='height: 20px; margin-bottom: 5px;width: 200px' type="text" placeholder="Size" name="size" value="<%=Jewelry.size%>"/><br/>
             <label>Material:</label><input style='height: 20px; margin-bottom: 5px;width: 200px' type="text" placeholder="Material" name="material" value="<%=Jewelry.material%>"/><br/>
