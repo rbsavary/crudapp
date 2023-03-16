@@ -20,7 +20,7 @@ app.use(methodOverride("_method"));
 //   });
 // });
 // Jewelry.collection.drop();
-//===GET
+// ===GET
 
 app.get("/", (req, res) => {
   Jewelry.find({}).then((allJewelry) => {
@@ -32,7 +32,6 @@ app.get("/", (req, res) => {
 app.get("/new", (req, res) => {
   res.render("new.ejs");
 });
-
 app.post("/", (req, res) => {
   Jewelry.create(req.body).then(() => {
     res.redirect("/");
@@ -46,7 +45,7 @@ app.delete("/:id", (req, res) => {
   });
 });
 
-//==SHOW
+// //==SHOW
 
 app.get("/:id", (req, res) => {
   Jewelry.findById(req.params.id).then((currentJewelry) => {
