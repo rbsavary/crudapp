@@ -14,11 +14,11 @@ app.use(express.json());
 app.use(methodOverride("_method"));
 
 //===SEED
-app.get("/jewelryseed", (req, res) => {
-  Jewelry.create(JewelrySeed).then(() => {
-    res.send(JewelrySeed);
-  });
-});
+// app.get("/jewelryseed", (req, res) => {
+//   Jewelry.create(JewelrySeed).then(() => {
+//     res.send(JewelrySeed);
+//   });
+// });
 // Jewelry.collection.drop();
 // ===GET
 
@@ -54,18 +54,19 @@ app.get("/:id", (req, res) => {
     });
   });
 });
-
+// ==EDIT
 app.get("/:id/edit", (req, res) => {
   Jewelry.findById(req.params.id).then((currentJewelry) => {
     res.render("edit.ejs", { Jewelry: currentJewelry });
   });
 });
-
+// ==UPDATE
 app.put("/:id", (req, res) => {
   Jewelry.findByIdAndUpdate(req.params.id, req.body, { new: true }).then(() => {
     res.redirect("/");
   });
 });
+
 app.listen(port, () => {
   console.log(`Pretty Adornments app listening on port: ${port}`);
 });
